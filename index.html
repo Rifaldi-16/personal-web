@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send message to repal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Kirim Pesan kepada Repal</h2>
+        <p>katakan apa saja</p>
+
+        <!-- Ganti URL action di bawah dengan URL Formspree Anda -->
+        <form id="contact-form" action="https://formspree.io/f/xqpazdll" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama mu:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" id="btn-submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Pesan status pengiriman -->
+        <div id="status" class="status-msg"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
